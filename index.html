@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dachshund Guadalajara | Cachorros Kenichen y Mini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1612195583950-b8d35fa97498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .puppy-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .dachshund-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1a782' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-dog text-amber-700 text-3xl mr-2"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-amber-800">Dachshund Guadalajara</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-amber-900 hover:text-amber-600 font-medium">Inicio</a>
+                <a href="#cachorros" class="text-amber-900 hover:text-amber-600 font-medium">Cachorros</a>
+                <a href="#nosotros" class="text-amber-900 hover:text-amber-600 font-medium">Nosotros</a>
+                <a href="#testimonios" class="text-amber-900 hover:text-amber-600 font-medium">Testimonios</a>
+                <a href="#contacto" class="text-amber-900 hover:text-amber-600 font-medium">Contacto</a>
+            </nav>
+            <button class="md:hidden text-amber-900" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
+            <a href="#inicio" class="block py-2 text-amber-900 hover:text-amber-600">Inicio</a>
+            <a href="#cachorros" class="block py-2 text-amber-900 hover:text-amber-600">Cachorros</a>
+            <a href="#nosotros" class="block py-2 text-amber-900 hover:text-amber-600">Nosotros</a>
+            <a href="#testimonios" class="block py-2 text-amber-900 hover:text-amber-600">Testimonios</a>
+            <a href="#contacto" class="block py-2 text-amber-900 hover:text-amber-600">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Cachorros Dachshund de Calidad</h1>
+            <p class="text-xl md:text-2xl mb-8">Kenichen y Mini - Criados con amor en Guadalajara desde 2020</p>
+            <a href="#cachorros" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Ver Cachorros</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-16 bg-white dachshund-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Nuestra Historia</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="puppies_tiana_kobe.jpg" alt="Dachshund breeder" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-4">Especialistas en Dachshund desde 2020</h3>
+                    <p class="text-gray-700 mb-4">En Dachshund Guadalajara nos dedicamos con pasión a la crianza de Dachshund Kenichen y Mini. Desde nuestro inicio en 2020, nos hemos comprometido a ofrecer cachorros saludables, con excelente temperamento y de líneas de sangre cuidadosamente seleccionadas.</p>
+                    <p class="text-gray-700 mb-4">Nuestros perros viven en un ambiente familiar, recibiendo todo el amor y cuidados necesarios para su óptimo desarrollo.</p>
+                    <p class="text-gray-700 mb-6">Estamos ubicados en Guadalajara, Jalisco, donde criamos con responsabilidad y ética, asegurando que cada cachorro llega a su nuevo hogar con todas las vacunas, desparasitaciones y cuidados veterinarios necesarios.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-amber-100 px-4 py-2 rounded-full">
+                            <i class="fas fa-heart text-amber-700 mr-2"></i>
+                            <span class="text-amber-900">Criados con amor</span>
+                        </div>
+                        <div class="flex items-center bg-amber-100 px-4 py-2 rounded-full">
+                            <i class="fas fa-shield-alt text-amber-700 mr-2"></i>
+                            <span class="text-amber-900">Garantía de salud</span>
+                        </div>
+                        <div class="flex items-center bg-amber-100 px-4 py-2 rounded-full">
+                            <i class="fas fa-home text-amber-700 mr-2"></i>
+                            <span class="text-amber-900">Ambiente familiar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Puppies Section -->
+    <section id="cachorros" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Nuestros Cachorros</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button class="filter-btn active bg-amber-600 text-white px-4 py-2 rounded-full" data-filter="all">Todos</button>
+                    <button class="filter-btn bg-gray-200 hover:bg-amber-200 px-4 py-2 rounded-full" data-filter="kenichen">Kenichen</button>
+                    <button class="filter-btn bg-gray-200 hover:bg-amber-200 px-4 py-2 rounded-full" data-filter="mini">Mini</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="puppies-container">
+                <!-- Puppy 1 -->
+                <div class="puppy-card kenichen bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="kobe1.jpg" alt="Dachshund Kenichen" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Kenichen</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Max</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-mars text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Macho</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">3 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Max es un cachorro Kenichen de pelo corto, muy juguetón y cariñoso. Perfecto para familias activas. Color Isabella</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$18,500 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puppy 2 -->
+                <div class="puppy-card mini bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="Tiana1.jpg" alt="Dachshund Mini" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Mini</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Luna</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-venus text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Hembra</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">2.5 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Luna es una encantadora Dachshund Kenichen de pelo corto, dulce y tranquila. Ideal para apartamentos. Merle Chocolate </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$25,000 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puppy 3 -->
+                <div class="puppy-card kenichen bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Dachshund Kenichen" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Kenichen</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Rocky</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-mars text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Macho</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">4 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Rocky es un Dachshund Kenichen de pelo duro, lleno de energía y personalidad. Excelente compañero.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$13,800 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puppy 4 -->
+                <div class="puppy-card mini bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1589941013451-1d6a0b71129d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Dachshund Mini" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Mini</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bella</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-venus text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Hembra</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">3 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Bella es una preciosa Dachshund Mini de pelo corto, muy sociable y lista para aprender trucos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$14,200 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puppy 5 -->
+                <div class="puppy-card kenichen bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1551290464-66719418ca54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Dachshund Kenichen" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Kenichen</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Thor</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-mars text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Macho</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">3.5 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Thor es un Dachshund Kenichen robusto y juguetón, con un hermoso pelaje rojizo y ojos expresivos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$12,900 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puppy 6 -->
+                <div class="puppy-card mini bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1612195583950-b8d35fa97498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dachshund Mini" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">Mini</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Daisy</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-venus text-gray-500 mr-2"></i>
+                            <span class="text-gray-600">Hembra</span>
+                            <i class="fas fa-birthday-cake text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">2 meses</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Daisy es una adorable Dachshund Mini de pelo largo, con un temperamento dulce y cariñoso.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-amber-800">$15,500 MXN</span>
+                            <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full transition duration-300">¡Me interesa!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacto" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">¿No encuentras lo que buscas? Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Lo que dicen nuestros clientes</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente satisfecho" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Martínez</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Adoptamos a Max hace un año y ha sido la mejor decisión. Dachshund Guadalajara nos brindó toda la información y seguimiento. Max es sano, alegre y lleno de energía. ¡Totalmente recomendados!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente satisfecho" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Rodríguez</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Llevamos a Luna a casa hace 8 meses y es una amor. El proceso de adopción fue muy profesional, con todas las garantías de salud y un excelente trato. Ahora estamos pensando en adoptar un hermanito para ella."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente satisfecho" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">María González</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Como familia primeriza con perros, agradecemos la paciencia y asesoría que nos brindaron. Rocky llegó con su cartilla de vacunas al día y nos han dado seguimiento para cualquier duda. ¡Excelente servicio!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Contáctanos</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-4">Información de contacto</h3>
+                    <p class="text-gray-700 mb-6">Estamos ubicados en Guadalajara, Jalisco. Contáctanos para conocer más sobre nuestros cachorros disponibles o programar una visita.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Dirección</h4>
+                                <p class="text-gray-700">Av. Vallarta 1234, Col. Americana, Guadalajara, Jalisco</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-amber-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Teléfono</h4>
+                                <p class="text-gray-700">+52 33 1234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-amber-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-700">contacto@dachshundguadalajara.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-amber-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Horario de atención</h4>
+                                <p class="text-gray-700">Lunes a Viernes: 10:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Síguenos en redes sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-4">Envíanos un mensaje</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        
+                        <div>
+                            <label for="interest" class="block text-gray-700 font-medium mb-2">Interés en</label>
+                            <select id="interest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                                <option value="">Selecciona una opción</option>
+                                <option value="kenichen">Dachshund Kenichen</option>
+                                <option value="mini">Dachshund Mini</option>
+                                <option value="info">Información general</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Preguntas frecuentes</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium text-gray-800">¿Qué diferencia hay entre Dachshund Kenichen y Mini?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-700">La principal diferencia está en el tamaño. Los Dachshund Kenichen son estándar, con un peso entre 7-14 kg cuando son adultos. Los Dachshund Mini son más pequeños, pesando entre 4-7 kg. Ambos comparten las mismas características de temperamento y apariencia, solo varía el tamaño.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium text-gray-800">¿Qué incluye el precio de los cachorros?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-700 mb-2">Nuestros cachorros incluyen:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>Cartilla de vacunación al día</li>
+                            <li>Desparasitaciones completas</li>
+                            <li>Microchip identificador</li>
+                            <li>Certificado de salud veterinario</li>
+                            <li>Garantía genética</li>
+                            <li>Asesoría post-venta</li>
+                            <li>Kit de bienvenida con alimento y accesorios</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium text-gray-800">¿Puedo visitar a los cachorros antes de comprar?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-700">Sí, programamos visitas con cita previa para que conozcas a nuestros cachorros y a sus padres. Esto nos permite controlar el flujo de personas y garantizar la salud de nuestros perros. Las visitas son en nuestro criadero en Guadalajara, Jalisco, en horarios establecidos.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium text-gray-800">¿Entregan documentación de pedigree?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-700">Todos nuestros cachorros tienen registro de pedigree de la Federación Canófila Mexicana (FCM). Al momento de la entrega recibirás los documentos correspondientes que acreditan su linaje. Los padres de nuestros cachorros tienen pedigree verificable y excelentes líneas de sangre.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium text-gray-800">¿Qué métodos de pago aceptan?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-700 mb-2">Aceptamos diferentes métodos de pago para tu comodidad:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>Efectivo</li>
+                            <li>Transferencia bancaria</li>
+                            <li>Tarjetas de crédito/débito (con cargo adicional del 3%)</li>
+                            <li>Mercado Pago</li>
+                        </ul>
+                        <p class="text-gray-700 mt-2">Para reservar un cachorro se requiere un anticipo del 30% del valor total.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-dog text-amber-300 text-2xl mr-2"></i>
+                        <h2 class="text-xl font-bold">Dachshund Guadalajara</h2>
+                    </div>
+                    <p class="text-amber-200">Especialistas en Dachshund Kenichen y Mini desde 2020.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-amber-300">Enlaces</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="hover:text-amber-300 transition duration-300">Inicio</a></li>
+                            <li><a href="#cachorros" class="hover:text-amber-300 transition duration-300">Cachorros</a></li>
+                            <li><a href="#nosotros" class="hover:text-amber-300 transition duration-300">Nosotros</a></li>
+                            <li><a href="#testimonios" class="hover:text-amber-300 transition duration-300">Testimonios</a></li>
+                            <li><a href="#contacto" class="hover:text-amber-300 transition duration-300">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-amber-300">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-amber-300 transition duration-300">Términos y condiciones</a></li>
+                            <li><a href="#" class="hover:text-amber-300 transition duration-300">Política de privacidad</a></li>
+                            <li><a href="#" class="hover:text-amber-300 transition duration-300">Garantías</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-amber-300">Contacto</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-300"></i>
+                                <span>Guadalajara, Jalisco</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt mr-2 text-amber-300"></i>
+                                <span>+52 33 1234 5678</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-amber-300"></i>
+                                <span>contacto@dachshundguadalajara.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-amber-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-amber-200 mb-4 md:mb-0">© 2023 Dachshund Guadalajara. Todos los derechos reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 bg-amber-800 hover:bg-amber-700 rounded-full flex items-center justify-center transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-amber-800 hover:bg-amber-700 rounded-full flex items-center justify-center transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-amber-800 hover:bg-amber-700 rounded-full flex items-center justify-center transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-amber-600 hover:bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg max-w-md w-full mx-4 p-6 relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="text-2xl font-bold text-amber-800 mb-4">¡Gracias por tu interés!</h3>
+            <p class="text-gray-700 mb-6">Por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad para proporcionarte más información sobre nuestros cachorros Dachshund.</p>
+            <form class="space-y-4">
+                <div>
+                    <label for="modal-name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                    <input type="text" id="modal-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                
+                <div>
+                    <label for="modal-email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                    <input type="email" id="modal-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                
+                <div>
+                    <label for="modal-phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                    <input type="tel" id="modal-phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Enviar información</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Filter puppies
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const puppyCards = document.querySelectorAll('.puppy-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-amber-600', 'text-white');
+                    btn.classList.add('bg-gray-200', 'hover:bg-amber-200');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active', 'bg-amber-600', 'text-white');
+                button.classList.remove('bg-gray-200', 'hover:bg-amber-200');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                puppyCards.forEach(card => {
+                    if (filter === 'all' || card.classList.contains(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ accordion
+        const faqButtons = document.querySelectorAll('.faq-btn');
+        
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Modal for "Me interesa" buttons
+        const interestButtons = document.querySelectorAll('.puppy-card button');
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('close-modal');
+        
+        interestButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close modal when clicking outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
